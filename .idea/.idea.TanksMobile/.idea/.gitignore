@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.TanksMobile.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\tgdse\Downloads\X\TanksMobile\.idea\.idea.TanksMobile\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
