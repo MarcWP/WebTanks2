@@ -95,8 +95,7 @@ public class TankMovement : MonoBehaviour
     private void Move()
     {
         // Adjust the position of the tank based on the player's input.
-        print("axis" +  CrossPlatformInputManager.GetAxis("Horizontal1"));
-        
+
         //if (Mathf.Abs(CrossPlatformInputManager.GetAxis("Horizontal1")) > 0.5) return;
 
         Vector3 movement = Vector3.zero;

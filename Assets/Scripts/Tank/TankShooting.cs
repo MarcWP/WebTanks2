@@ -54,6 +54,7 @@ public class TankShooting : MonoBehaviour
 
             m_ShootingAudio.clip = m_ChargingClip;
             m_ShootingAudio.Play();
+            
 
         } else if(CrossPlatformInputManager.GetButton("Jump")){
             // Holding the fire button, not yet fired
@@ -63,6 +64,7 @@ public class TankShooting : MonoBehaviour
 
         } else if(CrossPlatformInputManager.GetButtonUp("Jump") && !m_Fired){
             // we released the button, having not fired yet
+            VibrationsV2.Vibrate(200, 55);
             Fire();
         }
     }

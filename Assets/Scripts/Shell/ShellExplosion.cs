@@ -11,15 +11,19 @@ public class ShellExplosion : MonoBehaviour
     public float m_ExplosionRadius = 5f;              
 
 
+
     private void Start()
     {
         Destroy(gameObject, m_MaxLifeTime);
+
     }
+    
 
 
     private void OnTriggerEnter(Collider other)
     {
-        Handheld.Vibrate();
+        
+        //Handheld.Vibrate();
 
         // Find all the tanks in an area around the shell and damage them.
         Collider[] colliders = Physics.OverlapSphere(transform.position, m_ExplosionRadius, m_TankMask);
